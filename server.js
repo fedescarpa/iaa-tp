@@ -19,6 +19,6 @@ app.post('/recognize', bodyParser.json({ strict: true }), function (req, res) {
 
 app.use(express.static('docs'));
 
-app.listen(3000, function () {
+app.listen(process.env.PORT || 3000, function () {
   console.log('Example app listening on port 3000!');
 });
