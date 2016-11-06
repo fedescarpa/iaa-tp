@@ -1,0 +1,31 @@
+doctype html
+html
+head
+  title IAA - Garcia, Scarpa
+  meta(charset="utf-8")
+
+  <!-- build:css css/main.css -->
+  link(rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.css")
+  link(rel="stylesheet" type="text/css" href="index.css")
+  <!-- endBuild -->
+
+  <!-- build:js js/main.js -->
+  script(type="text/javascript" src="node_modules/jquery/dist/jquery.js")
+  script(type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.js")
+  script(type="text/javascript" src="index.js")
+  <!-- endBuild -->
+body.container
+
+  .row
+    .col-md-12.text-center
+      h1 ¡Dibujá acá!
+  
+      div
+        canvas#myCanvas
+      div
+        button.btn.btn-primary(type="button") Borrar
+        button.btn.btn-default(type="button") Reconocer
+      span 
+        span El caracter reconocido es:
+        strong.character &nbsp;????
+

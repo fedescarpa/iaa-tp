@@ -1,0 +1,7 @@
+#myCanvas {
+  border-style: solid;
+  border-width: 1px;
+  width: 300px;
+  height: 150px;
+  cursor: pointer;
+}
